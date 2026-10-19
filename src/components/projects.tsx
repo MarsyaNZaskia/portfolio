@@ -109,7 +109,7 @@ export default function Projects() {
                       </div>
 
                       <Link
-                      href={project.link || "#"} // Pastikan nama 'link' sesuai dengan yang ada di file data/projects-mu ya
+                      href={project.link || "#"} 
                       target="_blank" // Opsional: Tambahkan ini kalau mau link-nya terbuka di tab baru
                       rel="noopener noreferrer" // Praktik keamanan standar kalau pakai target="_blank"
                       className={`group/button inline-flex items-center gap-3 rounded-full px-5 py-3 text-sm font-semibold transition-all duration-300 ${

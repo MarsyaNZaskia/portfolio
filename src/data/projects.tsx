@@ -11,7 +11,7 @@ export const projects = [
     tech: ["Laravel", "PHP", "MySQL", "Blade"],
     type: "featured",
     image: "/images/projects/ujikom.png",
-    link: ""
+    link: "https://github.com/MarsyaNZaskia/peminjaman-loker.git"
   },
 
   {

@@ -63,17 +63,6 @@ export default function Experience() {
             </Reveal>
           ))}
         </div>
-
-        {/* <div className="mt-10 flex items-center gap-5">
-          <div>
-            <p className="text-4xl font-bold tracking-tight md:text-5xl">
-              Rp31.968.959
-            </p>
-            <p className="mt-1 text-xs uppercase tracking-[0.2em] text-black/40">
-              Sales achieved during Veragrosir period
-            </p>
-          </div>
-        </div> */}
       </div>
     </section>
   );

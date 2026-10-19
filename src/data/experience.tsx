@@ -4,7 +4,7 @@ export const experiences = [
     company: "AIDO HEALTH",
     role: "Concierge Intern",
     description:
-    "Incoming concierge intern, joining the team to gain hands-on experience in customer-facing operations and service.",
+    "Concierge intern, joining the team to gain hands-on experience in customer-facing operations and service.",
     current: true,
   },
   {
