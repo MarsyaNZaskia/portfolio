@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
-import { certificates } from "@/data/certificate";
+import { certificate } from "@/data/certificate";
 
 export default function Certificates() {
   return (
@@ -40,9 +40,9 @@ export default function Certificates() {
         </motion.div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {certificates.map((certificate, index) => (
+          {certificate.map((certificate, index) => (
             <motion.article
-              key={certificates.id}
+              key={certificate.id}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
@@ -57,7 +57,7 @@ export default function Certificates() {
                 className="block"
               >
                 {certificate.format === "image" ? (
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-[1.2rem] bg-[#fff0f5]">
+                  <div className="relative aspect-4/3 overflow-hidden rounded-[1.2rem] bg-[#fff0f5]">
                     <Image
                       src={certificate.file}
                       alt={`Certificate: ${certificate.title}`}
@@ -67,7 +67,7 @@ export default function Certificates() {
                     />
                   </div>
                 ) : (
-                  <div className="flex aspect-[4/3] flex-col items-center justify-center gap-3 rounded-[1.2rem] bg-[#fff0f5] text-[#d93668] transition-colors group-hover:bg-[#ffe4ee]">
+                  <div className="flex aspect-4/3 flex-col items-center justify-center gap-3 rounded-[1.2rem] bg-[#fff0f5] text-[#d93668] transition-colors group-hover:bg-[#ffe4ee]">
                     <span className="text-6xl">♡</span>
                     <span className="rounded-full bg-white px-4 py-2 text-xs font-black tracking-[0.2em]">
                       PDF DOCUMENT
@@ -116,7 +116,7 @@ export default function Certificates() {
           ))}
         </div>
 
-        {certificates.length === 0 && (
+        {certificate.length === 0 && (
           <p className="rounded-2xl border border-dashed border-[#e7b5c7] p-10 text-center text-sm text-[#856a77]">
             Certificates will be added here soon ♡
           </p>

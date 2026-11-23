@@ -30,9 +30,9 @@ export default function Hero() {
         ♡
       </motion.div>
 
-      <div className="mx-auto w-full max-w-4xl">
-        <div className="flex flex-col items-center justify-center gap-12 text-center">
-          <div className="flex flex-col items-center">
+      <div className="mx-auto w-full max-w-7xl">
+        <div className="grid items-center gap-12 md:grid-cols-[7fr_3fr] md:gap-8 lg:gap-16">
+          <div className="text-center md:text-left">
             <motion.p
               className="mb-6 text-sm font-medium uppercase tracking-[0.25em] text-cherry"
               initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ export default function Hero() {
             </motion.h1>
 
             <motion.div
-              className="mt-10 flex flex-col items-center gap-8"
+              className="mt-10 flex flex-col items-center gap-8 md:items-start"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
@@ -77,6 +77,29 @@ export default function Hero() {
               </a>
             </motion.div>
           </div>
+
+          <motion.div
+            className="mx-auto w-full max-w-sm md:max-w-none"
+            initial={{ opacity: 0, x: 24 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <div className="relative mx-auto aspect-4/5 w-full max-w-[20rem] rounded-[48%_48%_2rem_2rem] border border-pink/30 bg-linear-to-br from-pink/20 via-white to-cherry/10 p-3 shadow-[0_24px_70px_rgba(217,54,104,0.12)] md:max-w-none">
+              <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-[inherit] border border-dashed border-pink/40 bg-white/70">
+                <div className="px-6 text-center">
+                  <span className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-pink/10 text-3xl text-cherry">
+                    ♡
+                  </span>
+                  <p className="text-sm font-semibold text-black/60">
+                    Your photo goes here
+                  </p>
+                  <p className="mt-2 text-xs leading-relaxed text-black/40">
+                    Share a portrait and I can add it here
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
 
